@@ -44,4 +44,7 @@ public final class JiraMetrics implements Metrics {
     public List<Metric> getMetrics2() {
         return Arrays.asList(ISSUES);
     }
+    public List<Metric> getMetrics3() {
+        return Arrays.asList(ISSUES);
+    }
 }

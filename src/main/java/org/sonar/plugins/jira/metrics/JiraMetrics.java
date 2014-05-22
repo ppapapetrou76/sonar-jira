@@ -27,18 +27,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public final class JiraMetrics implements Metrics {
-  public static final String ISSUES_DOMAIN = "Issues";
+    public static final String ISSUES_DOMAIN = "Issues";
 
-  public static final String ISSUES_KEY = "issues";
-  public static final Metric ISSUES = new Metric.Builder(ISSUES_KEY, "JIRA Issues", Metric.ValueType.INT)
-      .setDescription("Number of JIRA Issues")
-      .setDirection(Metric.DIRECTION_NONE)
-      .setQualitative(false)
-      .setDomain(ISSUES_DOMAIN)
-      .create();
+    public static final String ISSUES_KEY = "issues";
+    public static final Metric ISSUES = new Metric.Builder(ISSUES_KEY, "JIRA Issues", Metric.ValueType.INT)
+            .setDescription("Number of JIRA Issues")
+            .setDirection(Metric.DIRECTION_NONE)
+            .setQualitative(false)
+            .setDomain(ISSUES_DOMAIN)
+            .create();
 
-  public List<Metric> getMetrics() {
-    return Arrays.asList(ISSUES);
-  }
+    public List<Metric> getMetrics() {
+        return Arrays.asList(ISSUES);
+    }
 
+    public List<Metric> getMetrics2() {
+        return Arrays.asList(ISSUES);
+    }
 }
